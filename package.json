@@ -1,0 +1,26 @@
+{
+  "name": "huddle-landing-page-with-single-introductory-section-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camilo-Riobamba/huddle-landing-page-with-single-introductory-section-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Camilo-Riobamba/huddle-landing-page-with-single-introductory-section-master/issues"
+  },
+  "homepage": "https://github.com/Camilo-Riobamba/huddle-landing-page-with-single-introductory-section-master#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}

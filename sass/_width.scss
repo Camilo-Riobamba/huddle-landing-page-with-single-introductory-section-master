@@ -1,0 +1,30 @@
+// width
+@for $i from 1 through 10 {
+    .w-#{$i * 10} {
+        width: #{$i * 10%};
+    }
+}
+
+@include breakpoint(min, sm) {
+    @for $i from 1 through 10 {
+        .w-#{$i * 10}-sm {
+            width: #{$i * 10%};
+        }
+    }
+}
+
+@include breakpoint(min, md) {
+    @for $i from 1 through 10 {
+        .w-#{$i * 10}-md {
+            width: #{$i * 10%};
+        }
+    }
+}
+
+@include breakpoint(min, lg) {
+    @for $i from 1 through 10 {
+        .w-#{$i * 10}-lg {
+            width: #{$i * 10%};
+        }
+    }
+}
