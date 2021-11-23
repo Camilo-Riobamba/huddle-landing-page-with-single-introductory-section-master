@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "Manrope";
-  src: url("../fonts/manrope/Manrope-VariableFont_wght.ttf");
+  font-family: "Open sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 .bg-white {
   background-color: #fff;
@@ -388,47 +392,25 @@
     width: 100%;
   }
 }
-.text-dark-grayish-blue {
-  color: #48556a;
+.text-violet {
+  color: #674baf;
 }
 
-.text-dark-blue {
-  color: #6d7f97;
+.text-violet {
+  color: #e882e8;
 }
 
-.text-grayish-blue {
-  color: #9eafc2;
+.bg-violet {
+  background-color: #674baf;
 }
 
-.text-light-grayish-blue {
-  color: #ecf2f8;
-}
-
-.bg-dark-grayish-blue {
-  background-color: #48556a;
-}
-
-.bg-dark-blue {
-  background-color: #6d7f97;
-}
-
-.bg-graysih-blue {
-  background-color: #9eafc2;
-}
-
-.bg-light-grayish-blue {
-  background-color: #ecf2f8;
-}
-
-.drawer {
-  background-image: url("../images/drawers.jpg");
-  background-size: cover;
-  background-position: center;
+.bg-violet {
+  background-color: #e882e8;
 }
 
 html {
-  font-size: 14px;
-  font-family: "Manrope";
+  font-size: 16px;
+  font-family: "Poppins";
 }
 html * {
   box-sizing: border-box;

@@ -1,22 +1,29 @@
 //fonts
 @font-face {
-  font-family: "Manrope";
-  src: url("../fonts/manrope/Manrope-VariableFont_wght.ttf");
+  font-family: "Open sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
-$font-family: "Manrope";
-$font-size: 14px;
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+$font-family: "Poppins";
+$font-size: 16px;
 
 // colors
-$primary: ("Very Dark Grayish Blue": hsl(217, 19%, 35%),
-  "Desaturated Dark Blue": hsl(214, 17%, 51%),
-  "Grayish Blue": hsl(212, 23%, 69%),
-  "Light Grayish Blue": hsl(210, 46%, 95%));
+$primary: (
+  "Violet": hsl(257, 40%, 49%),
+  "Soft Magenta": hsl(300, 69%, 71%),
+);
 
 //breakpoints
-$breakpoints: (xs: 0,
+$breakpoints: (
+  xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px);
+  xxl: 1400px,
+);

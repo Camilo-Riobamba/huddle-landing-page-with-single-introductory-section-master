@@ -1,41 +1,19 @@
 @use "sass:map";
 
 // fonts
-.text-dark-grayish-blue {
-    color: map.get($primary, "Very Dark Grayish Blue");
+.text-violet{
+    color: map.get($primary, "Violet");
 }
 
-.text-dark-blue {
-    color: map.get($primary, "Desaturated Dark Blue");
-}
-
-.text-grayish-blue {
-    color: map.get($primary, "Grayish Blue");
-}
-
-.text-light-grayish-blue {
-    color: map.get($primary, "Light Grayish Blue");
+.text-violet{
+    color: map.get($primary, "Soft Magenta");
 }
 
 // backgrounds
-.bg-dark-grayish-blue {
-    background-color: map.get($primary, "Very Dark Grayish Blue");
+.bg-violet{
+    background-color: map.get($primary, "Violet");
 }
 
-.bg-dark-blue {
-    background-color: map.get($primary, "Desaturated Dark Blue");
-}
-
-.bg-graysih-blue {
-    background-color: map.get($primary, "Grayish Blue");
-}
-
-.bg-light-grayish-blue {
-    background-color: map.get($primary, "Light Grayish Blue");
-}
-
-.drawer {
-    background-image: url('../images/drawers.jpg');
-    background-size: cover;
-    background-position: center;
+.bg-violet{
+    background-color: map.get($primary, "Soft Magenta");
 }
