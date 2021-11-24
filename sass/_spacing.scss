@@ -1,49 +1,54 @@
+@use "sass:list";
+
 //padding
-.p-0 {
-    padding: 0rem;
+$spacing: 0rem, 0.5rem, 1rem, 2rem;
+$positions: (
+    "": "",
+    t: -top,
+    r: -right,
+    b: -bottom,
+    l: -left
+);
+
+@mixin spacing($property: "", $value, $modifier: ""){
+    .p#{$modifier}{
+        padding#{$property}: $value;
+    }
+
+    .m#{$modifier}{
+        margin#{$property}: $value;
+    }
 }
 
-.p-1 {
-    padding: 0.5rem;
+@mixin spacing-position($media: ""){
+    @each $position, $property in $positions {
+        @for $i from 0 through 3 {
+            @include spacing(
+                // position
+                $property,
+
+                // value
+                list.nth($spacing, $i + 1),
+
+                // (poroperty)(position)-(value)-(breakpoint)
+                #{$position}-#{$i}#{$media}
+            );
+        }
+    }
 }
 
-.p-2 {
-    padding: 1rem;
+@include spacing-position();
+
+.m-auto{
+    margin: 0 auto;
 }
 
-.p-3 {
-    padding: 2rem;
-}
+@each $media in $list_breakpoints{
+    @include breakpoint(min, $media){
+        @include spacing-position(-#{$media});
+    }
 
-// margin
-.m-0 {
-    margin: 0rem;
-}
-
-.m-1 {
-    margin: 0.5rem;
-}
-
-.m-2 {
-    margin: 1rem;
-}
-
-.m-3 {
-    margin: 2rem;
-}
-
-.mt-0 {
-    margin-top: 0rem;
-}
-
-.mt-1 {
-    margin-top: 0.5rem;
-}
-
-.mt-2 {
-    margin-top: 1rem;
-}
-
-.mt-3 {
-    margin-top: 2rem;
+    .m-auto-#{$media}{
+        margin: 0 auto;
+    }
 }
